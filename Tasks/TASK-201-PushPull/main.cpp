@@ -1,4 +1,4 @@
-#include "mbed.h"
+-#include "mbed.h"
 
 // Hardware Definitions
 #define TRAF_GRN1_PIN PC_6

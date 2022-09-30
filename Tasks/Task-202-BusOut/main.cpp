@@ -10,14 +10,17 @@
 // DigitalOut yel(TRAF_YEL1_PIN);
 // DigitalOut red(TRAF_RED1_PIN,1);
 BusOut leds(TRAF_RED1_PIN, TRAF_YEL1_PIN, TRAF_GRN1_PIN);
+int a = 0;
 
 int main()
 {
     while (true) {
         leds = 0;   //Binary 000
-        wait_us(500000);
+        wait_us(a);
         leds = 7;   //Binary 111
-        wait_us(500000);    
+        wait_us(a);
+        a = a+500;
+        printf("Count = %d \n",a);    
     }
 }
 
